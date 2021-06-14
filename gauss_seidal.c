@@ -1,11 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 
-void copy(float **x,float **y,int n)
-{
-    
-}
-
 int main()
 {
     printf("Enter the number of variables : ");
@@ -23,6 +18,12 @@ int main()
             else
                 sij += a[i][j];
         }
+    }
+
+    if(sii<sij)
+    {
+        printf("Incorrect input");
+        return 0;
     }
     
     printf("Enter initial values of unknown : ");
